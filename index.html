@@ -287,9 +287,6 @@
         
           <h2 id="1-安装环境"><a href="#1-安装环境" class="headerlink" title="1. 安装环境"></a>1. 安装环境</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><h4 id="1-建立Repository"><a href="#1-建立Repository" class="headerlink" title="(1) 建立Repository"></a>(1) 建立Repository</h4><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】</p>
 <h4 id="2-配置SSH-Key"><a href="#2-配置SSH-Key" class="headerlink" title="(2) 配置SSH-Key"></a>(2) 配置SSH-Key</h4><p>第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C “youremail@example.com”</div></pre></td></tr></table></figure></p>
-<p>你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，由于这个Key也不是用于军事目的，所以也无需设置密码。<br>如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。</p>
-<p>第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：</p>
-<p>然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/09/03/以Hexo搭建Github Pages/#more" rel="contents">
               Read more &raquo;
